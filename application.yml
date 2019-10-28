@@ -1,2 +1,14 @@
-application:
- name: ywz-test
+spring:
+ profiles:
+  active:
+   - dev
+---
+spring:
+ profiles: test
+ application:
+  name: ywz-test
+---
+spring:
+ profiles: dev
+ application:
+  name: ywz-dev
