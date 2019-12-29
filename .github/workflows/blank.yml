@@ -20,6 +20,7 @@ jobs:
     - name: Run a one-line script
       run: echo Hello, world!
     - run: |
+       echo {{ secrets.MYSECRET}}
        node -v
        curl localhost:8080
     - name: Run a multi-line script
